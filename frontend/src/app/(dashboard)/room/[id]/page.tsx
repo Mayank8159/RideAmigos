@@ -23,7 +23,7 @@ export default function RiderRoom({ params }: { params: Promise<{ id: string }> 
         const state = channel.presenceState();
         setActiveRiders(Object.values(state).flat());
       })
-      .subscribe(async (status) => {
+      .subscribe(async (status: string) => {
         if (status === 'SUBSCRIBED') {
           navigator.geolocation.watchPosition((pos) => {
             channel.track({

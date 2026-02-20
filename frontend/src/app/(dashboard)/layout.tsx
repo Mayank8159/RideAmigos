@@ -8,6 +8,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <Link href="/map" className="hover:text-orange-500 transition">📍</Link>
         <Link href="/room/global" className="hover:text-orange-500 transition">👥</Link>
         <Link href="/assistant" className="hover:text-orange-500 transition">🤖</Link>
+        <Link href="/settings" className="hover:text-orange-500 transition">⚙️</Link>
       </nav>
       
       {/* Main Content Area */}
